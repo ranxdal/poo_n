@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class Empleado : Persona1 {
+class Empleado : Persona {
 	//atributos
 	private : string codigop,puesto; 
 	
@@ -11,7 +11,7 @@ class Empleado : Persona1 {
 	Empleado(){
 	}
 	
-	Empleado(string nom,string ape, string dir,string fcn,int tel, string codp, string pst) : Persona1(nom,ape,dir,fcn,tel){
+	Empleado(string nom,string ape, string dir,string fcn,int tel, string codp, string pst) : Persona(nom,ape,dir,fcn,tel){
 		codigop = codp;
 		puesto = pst;
 		

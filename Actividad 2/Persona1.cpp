@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std; 
-class Persona1{
+class Persona{
 	//atributos
 	protected : string nombres,apellidos,direccion,fena;
 				int telefono;
 	//constructor
 	protected :
-			Persona1(){
+			Persona(){
 			}
-			Persona1(string nom,string ape,string dir,string fcn,int tel){
+			Persona(string nom,string ape,string dir,string fcn,int tel){
 				nombres = nom;
 				apellidos = ape;
 				direccion = dir;
@@ -18,4 +18,8 @@ class Persona1{
 			
 	//metodo
 	void mostrar();
+	void crear();
+	void leer();
+	void actualizar();
+	void borrar();
 };

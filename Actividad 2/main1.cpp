@@ -14,14 +14,15 @@ main(){
 	cin>>apellidos;
 	cout<<"Ingresar Direccion: ";
 	cin>>direccion;
-	cout<<"Ingresar fecha de nacimiento";
+	cout<<"Ingresar Fecha de Nacimiento";
 	cin<<fena
 	cout<<"Ingresar Telefono: ";
 	cin>>telefono;
 	
 	//instancia de un objeto
-	Cliente1 obj = Cliente1(nombres,apellidos,direccion,telefono,nit);
+	Cliente obj = Cliente(nombres,apellidos,direccion,telefono,nit);
 	obj.mostrar();
+	
 	
 	//cout<<"Datos del Cliente: "<<obj.getNit()<<", "<<obj.getNombres()<<", "<<obj.getApellidos()<<", "<<obj.getDireccion()<<", "<<obj.getTelefono()<<", ";
 	

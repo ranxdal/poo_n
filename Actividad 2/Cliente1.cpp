@@ -2,15 +2,13 @@
 #include <iostream>
 using namespace std;
 
-class Cliente1 : Persona1 {
+class Cliente : Persona {
 	//atributos
 	private : string nit; 
 	//constructor
 	public : 
-	Cliente1(){
-	}
-	
-	Cliente1(string nom,string ape,string dir,string fcn,int tel,string n) : Persona1(nom,ape,dir,fcn,tel){
+
+	Cliente(string nom,string ape,string dir,string fcn,int tel,string n) : Persona(nom,ape,dir,fcn,tel){
 		nit = n;
 	}
 	//metodos
@@ -35,7 +33,28 @@ class Cliente1 : Persona1 {
 	//metodos
 	void mostrar(){
 		cout<<"_________________________________"<<endl;
-		cout<<nit<<" , "<<nombres<<" , "<<apellidos<<" , "<<direccion<<" , "<<fena<<" , "<<telefono<<endl;
+		cout<<"NIT: "<<nit<<endl;
+		cout<<"NOMBRES: "<<nombres<<endl;
+		cout<<"APELLIDOS: "<<apellidos<<endl;
+		cout<<"DIRECCION: "<<direccion<<endl;
+		cout<<"FECHA DE NACIMIENTO: "<<fena<<endl;
+		cout<<"TELEFONO: "<<telefono<<endl;
+	}
+	
+	void crear(){
+		cout<<"Metodo crear de Cliente"<<endl;
+	}
+	
+	void leer(){
+		cout<<"Metodo leer de Cliente"<<endl;
+	}
+	
+	void actualizar(){
+		cout<<"Metodo de actualizar de Cliente"<<endl;
+	}
+	
+	void borrar(){
+		cout<<"Metodo borrar de Cliente"<<endl;
 	}
 	
 };
